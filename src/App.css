@@ -12,8 +12,16 @@ main {
   gap: 2.3rem;
 }
 
-@media only screen and (min-width: 90rem) {
+@media only screen and (min-width: 1440px) {
   main {
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  main > .box:first-child,
+  main > .box:last-child {
+    align-self: center;
   }
 }
